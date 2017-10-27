@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="com.abucay.labexer_101617.SecondActivity">
+
+    <Button
+        android:id="@+id/btn_loadshared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp"
+        android:text="Load Shared Preferences"
+        android:onClick="loadShared"/>
+
+    <Button
+        android:id="@+id/btn_loadinternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_loadshared"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Load Internal Storage"
+       android:onClick="loadInternal"/>
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_loadshared"
+        android:layout_alignStart="@+id/btn_loadshared"
+        android:layout_below="@+id/btn_loadinternal"
+        android:layout_marginTop="53dp"
+        android:text="Clear"
+        android:onClick="clearInfo"/>
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_clear"
+        android:layout_alignEnd="@+id/btn_loadshared"
+        android:layout_alignRight="@+id/btn_loadshared"
+        android:text="Back"
+        android:onClick="goBack"/>
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="85dp"
+        android:textSize="22dp"
+        android:textColor="@android:color/black" />
+</RelativeLayout>
